@@ -8,16 +8,16 @@
 <meta property="og:title" content="Gabriel Haro · Engenharia Civil">
 <meta property="og:description" content="Projetos, laudos, regularização e acompanhamento de obras.">
 <meta property="og:image" content="assets/perfil.jpg">
-<meta name="theme-color" content="#0E0F11">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E0F11'/%3E%3Cpath d='M4 26 L16 6 L28 26 Z M10 26 L16 16 L22 26' fill='none' stroke='%23FF6A2B' stroke-width='2'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0A1A2F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A1A2F'/%3E%3Cpath d='M4 26 L16 6 L28 26 Z M10 26 L16 16 L22 26' fill='none' stroke='%23FFC21A' stroke-width='2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0E0F11; --bg-2:#141619; --ink:#ECE8E1; --ink-2:#A19C93; --ink-3:#5E5A54;
-  --line:rgba(236,232,225,.10); --line-2:rgba(236,232,225,.22);
-  --accent:#FF6A2B; --blue:#7FA7C9;
+  --bg:#0A1A2F; --bg-2:#0D2240; --ink:#E8F0F8; --ink-2:#8EA7C4; --ink-3:#55719A;
+  --line:rgba(170,205,245,.10); --line-2:rgba(170,205,245,.22);
+  --accent:#FFC21A; --blue:#5FB8FF;
   --gutter:clamp(16px,4vw,56px);
   --mono:"IBM Plex Mono",ui-monospace,monospace;
   --sans:"Archivo",system-ui,sans-serif;
@@ -38,8 +38,8 @@ img{display:block;max-width:100%}
   background-image:
     linear-gradient(var(--line) 1px,transparent 1px),
     linear-gradient(90deg,var(--line) 1px,transparent 1px),
-    linear-gradient(rgba(236,232,225,.035) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(236,232,225,.035) 1px,transparent 1px);
+    linear-gradient(rgba(170,205,245,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(170,205,245,.035) 1px,transparent 1px);
   background-size:120px 120px,120px 120px,24px 24px,24px 24px;
   mask-image:radial-gradient(ellipse 90% 80% at 50% 40%,#000 30%,transparent 100%);
   -webkit-mask-image:radial-gradient(ellipse 90% 80% at 50% 40%,#000 30%,transparent 100%);
@@ -48,7 +48,7 @@ main,header,footer{position:relative;z-index:1}
 
 /* crosshair cursor (desktop) */
 .xhair{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:0;transition:opacity .4s}
-.xhair .h,.xhair .v{position:absolute;background:rgba(255,106,43,.28)}
+.xhair .h,.xhair .v{position:absolute;background:rgba(255,194,26,.28)}
 .xhair .h{left:0;right:0;height:1px;top:0}
 .xhair .v{top:0;bottom:0;width:1px;left:0}
 .xhair .coord{position:absolute;top:0;left:0;color:var(--accent);font-size:10px;padding:6px 8px;white-space:nowrap}
@@ -64,7 +64,7 @@ main,header,footer{position:relative;z-index:1}
 
 /* nav */
 header.nav{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:18px var(--gutter);transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
-header.nav.scrolled{background:rgba(14,15,17,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+header.nav.scrolled{background:rgba(10,26,47,.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
 .brand{display:flex;align-items:center;gap:12px;font-weight:600;font-variation-settings:"wdth" 90;letter-spacing:.02em}
 .brand svg{width:26px;height:26px}
 .nav ul{display:flex;gap:30px;list-style:none}
@@ -72,7 +72,7 @@ header.nav.scrolled{background:rgba(14,15,17,.72);backdrop-filter:blur(14px);-we
 .nav ul a:hover{color:var(--ink)}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border:1px solid var(--line-2);border-radius:999px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;transition:background .3s var(--ease),color .3s,border-color .3s;position:relative;overflow:hidden}
 .btn:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.btn.solid{background:var(--accent);color:#120800;border-color:var(--accent)}
+.btn.solid{background:var(--accent);color:#1A1300;border-color:var(--accent)}
 .btn.solid:hover{background:var(--ink);border-color:var(--ink)}
 .btn .arr{transition:transform .35s var(--ease)}
 .btn:hover .arr{transform:translateX(4px)}
@@ -92,7 +92,7 @@ header.nav.scrolled{background:rgba(14,15,17,.72);backdrop-filter:blur(14px);-we
 .hero-foot p strong{color:var(--ink);font-weight:500}
 
 /* title block (carimbo) */
-.carimbo{display:grid;grid-template-columns:96px 1fr;border:1px solid var(--line-2);background:rgba(20,22,25,.7);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);min-width:340px}
+.carimbo{display:grid;grid-template-columns:96px 1fr;border:1px solid var(--line-2);background:rgba(13,34,64,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);min-width:340px}
 .carimbo img{width:96px;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter .6s}
 .carimbo:hover img{filter:none}
 .carimbo .cells{display:grid;grid-template-columns:1fr 1fr}
@@ -170,12 +170,12 @@ section{padding:clamp(90px,14vw,180px) var(--gutter)}
 .building .ground{stroke:var(--ink-2);stroke-width:1.4}
 .building .hatch{stroke:var(--ink-3);stroke-width:1}
 .building .pile{fill:none;stroke:var(--blue);stroke-width:1.4}
-.building .footing{fill:rgba(127,167,201,.12);stroke:var(--blue);stroke-width:1.2}
+.building .footing{fill:rgba(95,184,255,.12);stroke:var(--blue);stroke-width:1.2}
 .building .col{fill:var(--ink)}
 .building .slab{fill:var(--ink)}
-.building .wall{fill:rgba(236,232,225,.05);stroke:var(--line-2);stroke-width:1}
-.building .win{fill:rgba(127,167,201,.08);stroke:var(--ink-2);stroke-width:1}
-.building .win.lit{fill:rgba(255,106,43,.75);stroke:var(--accent)}
+.building .wall{fill:rgba(170,205,245,.05);stroke:var(--line-2);stroke-width:1}
+.building .win{fill:rgba(95,184,255,.08);stroke:var(--ink-2);stroke-width:1}
+.building .win.lit{fill:rgba(255,194,26,.75);stroke:var(--accent)}
 .building .dim{stroke:var(--ink-3);stroke-width:1;fill:none}
 .building text{font-family:var(--mono);font-size:11px;fill:var(--ink-2);letter-spacing:.08em}
 .building .crane{stroke:var(--accent);stroke-width:1.4;fill:none}
@@ -259,7 +259,7 @@ footer .credit:hover b{color:var(--accent)}
 
 <header class="nav">
   <a href="#topo" class="brand" aria-label="Gabriel Haro, início">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 27 L16 5 L29 27 Z M9.5 27 L16 16 L22.5 27" fill="none" stroke="#FF6A2B" stroke-width="1.6"/></svg>
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 27 L16 5 L29 27 Z M9.5 27 L16 16 L22.5 27" fill="none" stroke="#FFC21A" stroke-width="1.6"/></svg>
     <span>GABRIEL HARO</span>
   </a>
   <ul class="mono">
@@ -599,7 +599,7 @@ gsap.from(".svc",{opacity:0,y:40,duration:.9,stagger:.08,ease:"power3.out",scrol
 gsap.to(".steps .rail",{scaleX:1,ease:"none",scrollTrigger:{trigger:".steps",start:"top 80%",end:"bottom 55%",scrub:true}});
 gsap.utils.toArray(".step").forEach((s,i) => {
   gsap.from(s,{opacity:0,y:40,duration:.9,delay:i*.08,ease:"power3.out",scrollTrigger:{trigger:".steps",start:"top 80%"}});
-  ScrollTrigger.create({trigger:".steps",start:()=>`top+=${i*40} 70%`,onEnter:()=>gsap.to(s.querySelector(".n"),{color:"#FF6A2B",duration:.5}),onLeaveBack:()=>gsap.to(s.querySelector(".n"),{color:"#5E5A54",duration:.5})});
+  ScrollTrigger.create({trigger:".steps",start:()=>`top+=${i*40} 70%`,onEnter:()=>gsap.to(s.querySelector(".n"),{color:"#FFC21A",duration:.5}),onLeaveBack:()=>gsap.to(s.querySelector(".n"),{color:"#55719A",duration:.5})});
 });
 
 /* ---------- magnetic buttons ---------- */
